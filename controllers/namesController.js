@@ -44,8 +44,8 @@ const transporter = nodemailer.createTransport({
    port: 465,
    secure: true,
     auth: {
-      user: 'vinaynesta2002@gmail.com',
-      pass: 'cmpzjjtsjghcfbxk'
+      user: 'test123@gmail.com',
+      pass: 'password'
     }
   });
 
@@ -70,8 +70,8 @@ exports.registrationSWS = catchAsync( async(req,res) => {
     const message = "We are here to notify you that ,we have received an application for the DIN from you. we will notify youn once the application is processed. Please, be patience for the reply.";
 
     const mailOptions = {
-        from: 'vinaynesta2002@gmail.com',
-        to: 'dvinay.19.cse@anits.edu.in',
+        from: 'test123@gmail.com',
+        to: 'test456@gmail.com',
         subject: 'New form submission',
         html: `<p>Name: ${data.userNameSWS}</p><p>Age: ${data.age}</p><p>Message: ${message}</p><p>Thank You</p><p>Regards</p><p>MCA</p>`
     };
