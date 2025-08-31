@@ -1,0 +1,44 @@
+
+
+<%- include('partials/header')  %>
+
+
+<div class="main">
+    
+    <!-- Sign up form -->
+    <section class="signup">
+        <div class="container1">
+            <br><br>
+            <h1 style="font-weight: bolder;font-size: large;"> &nbsp;&nbsp;&nbsp; Upload MOM and AOA</h1>
+            
+                <form id="pdfForm" enctype="multipart/form-data" method="post" action="/upload">
+                        <input type="file" name="pdf">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button style="background-color: aqua; padding: 10px 32px;" type="submit">Upload</button>
+                </form>
+                <!-- <div class="signup-image">
+                    <figure><img src="logFiles/images/signup-image.jpg" alt="sing up image"></figure>
+                    
+                </div> -->
+                
+                
+            </div>
+        </div>
+    </section>
+
+
+</div>
+
+
+
+
+
+
+
+<!-- Font Icon -->
+<link rel="stylesheet" href="logFiles/fonts/material-icon/css/material-design-iconic-font.min.css">
+<link rel="stylesheet" href="logFiles/css/style1.css">
+<!-- Main css -->
+<link rel="stylesheet" href="logFiles/css/style.css">
+<script src="logFiles/vendor/jquery/jquery.min.js"></script>
+<script src="logFiles/js/main.js"></script>
+<%- include('partials/footer') %>   
